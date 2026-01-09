@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    direction: rtl; /* لترتيب المحتوى العربي من اليمين لليسار */
+    overflow-x: hidden; /* لمنع ظهور شريط تمرير أفقي */
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* لجعل القائمة تنزل تحت اللوجو في الجوال */
+}
+
+.navigtion ul {
+    display: flex;
+    list-style-type: none;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.navigtion a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(205, 205, 232);
+    font-size: large;
+}
+
+.navigtion a:hover {
+    color: rgb(0, 106, 255);
+}
+
+/* --- قسم الـ Hero (البداية) --- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.heroSup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* حذفنا الـ left و الـ top لتتمركز تلقائياً */
+.name {
+    font-size: 3rem;
+    color: rgb(42, 95, 175);
+}
+
+.title {
+    font-size: 2rem;
+    color: rgb(42, 95, 175);
+}
+
+.hero img {
+    max-width: 100%; /* لكي لا تخرج الصورة عن الشاشة */
+    height: auto;
+}
+
+/* --- قسم عن الفريق --- */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 5%;
+    background-color: rgb(42, 95, 175);
+}
+
+.textContainer {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textTitle {
+    display: flex;
+    flex-direction: row-reverse; /* لترتيب "عن الفريق" بجانب بعض */
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aboutName, .aboutTitle {
+    color: rgb(20, 77, 163);
+    font-size: 2.5rem;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutMePar {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+
+/* --- قسم الأعمال --- */
+.works {
+    background-image: url("Portfolio-Tutorial-main/assets/svg/background.svg");
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.works h1 {
+    color: rgb(0, 106, 255);
+}
+
+.worksContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.projectTitle {
+    display: flex;
+    gap: 10px;
+}
+
+.conName { color: rgb(205, 205, 232); }
+.conTitle { color: rgb(0, 106, 255); }
+
+.works ul {
+    display: flex;
+    flex-wrap: wrap; /* أهم خاصية للجوال */
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.works li {
+    border-radius: 16px;
+    background-color: rgba(87, 88, 89, 0.406);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+}
+
+.works li img {
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+/* --- قسم كلمة الأعضاء --- */
+.dis {
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.dis div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.aa { color: rgb(0, 106, 255); }
+.a { color: rgba(87, 88, 89, 0.406); }
+
+/* --- قسم الشراكات --- */
+.nice {
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.nice h3 {
+    color: rgb(42, 95, 175);
+    border: 2px dashed rgb(0, 106, 255);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.nice h1 {
+    color: rgb(36, 70, 130);
+    border: 3px outset rgb(81, 0, 255);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+}
+
+/* --- الفوتر والتواصل --- */
+.socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    background-color: rgba(57,62,70,0.5);
+    padding: 1rem 2rem;
+}
+.socialMedia a:hover{
+ transform: scale(1.1);
+ background-color: rgb(0, 106, 255);
+}
+.socialMedia img {
+    width: 40px;
+}
+
+.conh h1 {
+    color: rgb(0, 106, 255);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .name { font-size: 2rem; }
+    .title { font-size: 1.2rem; }
+    header { justify-content: center; }
+}
