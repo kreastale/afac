@@ -184,7 +184,9 @@ header {
     padding: 3rem 5%;
     text-align: center;
 }
-
+.nice h1{
+color: rgb(42, 95, 175);
+}
 .nice h3 {
     color: rgb(42, 95, 175);
     border: 2px dashed rgb(0, 106, 255);
@@ -192,7 +194,7 @@ header {
     margin-top: 1rem;
 }
 
-.nice h1 {
+.nice h2 {
     color: rgb(36, 70, 130);
     border: 3px outset rgb(81, 0, 255);
     display: inline-block;
